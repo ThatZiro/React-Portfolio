@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "vite preview",
-    "dev": "vite",
     "build": "vite build",
+    "start": "npm run build && serve dist",
+    "dev": "vite",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -20,6 +20,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.0",
     "react-transition-group": "^4.4.5",
+    "serve": "^14.2.1",
     "vite": "^5.0.0"
   },
   "devDependencies": {

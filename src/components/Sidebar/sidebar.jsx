@@ -1,4 +1,4 @@
-import './Sidebar.css'
+import './sidebar.css'
 import profilePicture from "../../assets/ProfilePicture.png"
 import TechScroll from './splide.jsx';
 import {Link} from 'react-router-dom';

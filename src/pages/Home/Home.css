@@ -1,0 +1,96 @@
+.name h1 {
+    position: relative;
+    width: 100%;
+    font-size: 6rem;
+    text-align: center;
+    color: rgba(71, 35, 196, 1);
+    z-index: 6;
+}
+
+.name {
+    position: absolute;
+    left: 15%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    z-index: 6
+}
+
+.name::before {
+    position: absolute;
+    content: "";
+    right: 50%;
+    bottom: 50%;
+    width: 60%;
+    height: 300px;
+    transform: translate(50%, 50%);
+    background: transparent;
+    /*backdrop-filter: blur(5px);*/
+    border-radius: 20%;
+    z-index: 5;
+}
+
+
+.hoverText {
+    font-size: 6rem;
+    text-align: center;
+    font-weight: 100;
+    color: rgb(71, 35, 196);
+
+    /*transition: font-weight ease-in-out .1s;*/
+    cursor: pointer;
+}
+
+.hoverText:hover{
+    font-weight: 900;
+    color: rgb(191, 83, 253);
+
+}
+
+.hoverText:hover + .hoverText {
+    font-weight: 500;
+    color: rgb(156, 51, 255);
+}
+
+.hoverText:hover + .hoverText + .hoverText{
+    font-weight: 300;
+    color: rgb(91, 28, 199);
+}
+
+.hoverText:has(+ .hoverText:hover) {
+    font-weight: 500;
+    color: rgb(156, 51, 255);
+}
+.hoverText:has(+ .hoverText +.hoverText:hover) {
+    font-weight: 300;
+    color: rgb(91, 28, 199);
+}
+
+.view-work {
+    margin: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 6;
+}
+
+.view-work button {
+    position: relative;
+    background: transparent;
+    color: white;
+    font-size: 2rem;
+    padding: 10px 50px;
+    border: 2px solid white;
+    border-radius: 15px;
+    transition: all ease-in-out .4s;
+}
+
+.view-work button:hover {
+    background: rgb(191, 83, 253);
+    border-radius: 25px;
+    scale: 105%;
+}

@@ -1,0 +1,19 @@
+.hexagon {
+    position: relative;
+    transform: translateX(50%) translateY(-150px);
+}
+
+.hexagon h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--mainGrey)
+}
+
+.hexagon svg,
+.hexagon h1
+{
+    position: absolute;
+    left: 0;
+    top:0;
+    transform: translate(-50%, -50%);
+}

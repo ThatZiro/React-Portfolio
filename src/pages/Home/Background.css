@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 15%;
+    opacity: 75%;
+    z-index: -2; /* Ensure the canvas is behind other elements */
+}
+
+.mask {
+    -webkit-mask-image: radial-gradient(circle at 42.5% center,black,transparent 75%);
+    mask-image: radial-gradient(circle at 25% 60%, #000000,transparent 75%);
+}
+

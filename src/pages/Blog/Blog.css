@@ -1,0 +1,66 @@
+.blog {
+    position: fixed;
+    top: 0;
+    left: 15%;
+    right: 0;
+    bottom: 0;
+    opacity: 75%;
+    z-index: -2; /* Ensure the canvas is behind other elements */
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-self: center;
+
+    padding: 50px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+.blog::-webkit-scrollbar {
+    width: 6px;
+}
+.blog::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.blog-post{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    gap: 25px;
+    border-bottom: solid white 5px;
+    padding: 50px 50px 50px 50px;
+}
+.blog-post:hover {
+    cursor: pointer;
+    background: linear-gradient(180deg, rgba(16, 20, 36, 0.5) 0%, #101424 100%);
+}
+
+.blog-post p {
+    font-size: 1.75rem;
+}
+
+.blog-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-title {
+    display: flex;
+    font-size: 2rem;
+    gap: 25px;
+    width: 80%;
+}
+
+.blog-post h3 {
+    opacity: 50%;
+    font-size: 1.75rem;
+}

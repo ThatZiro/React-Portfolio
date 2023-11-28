@@ -1,0 +1,269 @@
+html {
+    scroll-behavior: smooth;
+}
+#Projects {
+    padding: 50px;
+    /*background: linear-gradient(180deg, rgba(6, 9, 24, 0.00) 0%, #060918 10%);*/
+    background-color: #EAEDFA;
+    color: #111423;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    min-height: 80vh;
+}
+
+.projects h1 {
+    color: #111423;
+    position: relative;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.projects .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: #DEE1EE;
+    font-size: 1.5rem;
+}
+
+.projects .menu h3 {
+    position: relative;
+    z-index: 2;
+    width: 15vw;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+}
+.projects .menu h3:not(.selected):hover {
+    color: #408bc6;
+}
+
+.projects .menu .selected {
+    color: #ffffff;
+}
+
+.projects .menu .selector {
+    position: absolute;
+    left: 0;
+    right: 75%;
+    top: 0;
+    bottom: 0;
+    background-color: #408CC7;
+    z-index: 1;
+    transition: all .5s cubic-bezier(0.68, -0.25, 0.27, 0.55); /* Adjust the cubic-bezier for a smoother stretch effect */
+}
+
+#All:hover .selector {
+    left: 0;
+    right: 75%;
+}
+
+#JS:hover .selector {
+    left: 25%;
+    right: 50%;
+}
+
+#React:hover .selector {
+    left: 50%;
+    right: 75%;
+}
+
+#Mongo:hover .selector {
+    left: 75%;
+    right: 0;
+}
+
+
+.projects-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.project {
+    min-width: 30%;
+    aspect-ratio: 1;
+    background: rgba(16, 20, 36, 0);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.project-img {
+    background: rgba(4, 7, 23, 0.8);
+    transition: all ease-in-out .5s;
+}
+.project h2 {
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+}
+
+.project Button {
+    scale: 75%;
+}
+
+.project Button:hover {
+    scale: 77%;
+}
+
+.project h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    color: rgba(228, 66, 255, 0.5);
+}
+
+.projects .hover {
+    opacity: 0;
+    position: absolute;
+    z-index: 100;
+}
+.hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all ease-in .1s;
+    gap: 100px;
+    pointer-events: none;
+}
+
+.hover h4 {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+.project-img {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #0f1323;
+}
+
+.project:hover .project-img{
+    filter: blur(3px);
+    background-blend-mode: overlay;
+}
+
+.project:hover .hover{
+    opacity: 1;
+    gap: 0;
+    transition: all ease-out .5s;
+}
+
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms;
+}
+
+.fade {
+    transition: opacity 500ms;
+}
+
+.projects-list.fade-out {
+    opacity: 0;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-modal {
+    background-color: white;
+    width: 40%;
+    height: 80%;
+    border-radius: 50px;
+}
+
+.modal-title {
+    background-color: #111423;
+    border-radius: 25px 25px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px ;
+    border-bottom: #3783BE 4px solid;
+}
+
+.modal-title h1 {
+    color: white;
+    margin: 0;
+}
+.modal-img {
+    height: 50%;
+    background-color: #060918;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.modal .div {
+    position: absolute;
+    bottom: 0;
+    transform: translate(0, 100%);
+    width: 100%;
+    height: 20%;
+    pointer-events: none;
+}
+
+.modal-content {
+
+    margin-top: 125px;
+    padding: 10px 50px;
+}
+
+.modal-content h2 {
+    font-size: 2rem;
+}
+.modal-content h3 {
+    font-size: 1.25rem;
+}
+
+.modal-content p {
+    font-size: 1.25rem;
+}
+
+.modal-nav {
+    margin-top: -25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-close {
+    cursor: pointer;
+}
+.modal-close:hover .modal-close-color{
+    fill: red;
+    transition: all ease-in-out .2s;
+}

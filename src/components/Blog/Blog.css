@@ -1,9 +1,5 @@
 .blog {
-    position: fixed;
-    top: 0;
-    left: 15%;
-    right: 0;
-    bottom: 0;
+    height: 100vh;
     opacity: 75%;
     z-index: -2; /* Ensure the canvas is behind other elements */
 
@@ -23,6 +19,11 @@
     scrollbar-color: transparent transparent;
 }
 
+.blog h1 {
+    font-size: 4rem;
+    align-self: center;
+}
+
 .blog::-webkit-scrollbar {
     width: 6px;
 }
@@ -33,7 +34,7 @@
 .blog-post{
     display: flex;
     flex-direction: column;
-    margin: 0px;
+    width: 50%;
     gap: 25px;
     border-bottom: solid white 5px;
     padding: 50px 50px 50px 50px;

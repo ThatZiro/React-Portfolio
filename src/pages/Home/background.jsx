@@ -32,7 +32,7 @@ function Background() {
     const draw = () => {
       ctx.fillStyle = "rgba(7,4,16,0.1)";
       ctx.fillRect(0, 0, width, height);
-      ctx.fillStyle = "rgb(112,54,255)";
+      ctx.fillStyle = "rgb(73,64,198)";
       ctx.font = `${font}px system-ui`;
       
       for (let i = 0; i < arr.length; i++) {

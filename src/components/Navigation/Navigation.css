@@ -1,0 +1,27 @@
+/* Navigation.css */
+nav {
+    background-color: #111423;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px 25%;
+    align-items: center;
+    border-bottom: 4px solid #3783BE;
+    position: relative; /* Set relative position initially */
+    transition: top 0.3s ease-in-out;
+}
+
+.link {
+    position: relative;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: all ease-in-out 0.5s;
+}
+
+.link:hover {
+    color: #8024C2;
+    transition: color ease-out 0.1s;
+    scale: 101%;
+}
+

@@ -1,78 +1,50 @@
-import { useState } from 'react'
-import './App.css'
-import Sidebar from './components/Sidebar/sidebar.jsx';
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home/Home.jsx';
-import About from './pages/About/About.jsx';
-import Blog from './pages/Blog/Blog.jsx';
-import Contact from './pages/Contact/Contact.jsx';
-
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Projects from './pages/Projects/Projects.jsx';
-import {TransitionGroup, CSSTransition} from 'react-transition-group';
+import Navigation from './components/Navigation/Navigation.jsx';
+import './App.css';
+import About from './pages/About/About.jsx';
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [isNavFixed, setIsNavFixed] = useState(false);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const threshold = 1285;
+      
+      setIsNavFixed(scrollPosition > threshold);
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   
   return (
     <>
       <BrowserRouter>
-        <Sidebar />
-        <TransitionGroup>
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <CSSTransition key="home" classNames="fade" timeout={5000}>
-                  <Home />
-                </CSSTransition>
-              }
-            />
-            <Route
-              path="/home"
-              element={
-                <CSSTransition key="home" classNames="fade" timeout={5000}>
-                  <Home />
-                </CSSTransition>
-              }
-            />
-            <Route
-              path="/projects"
-              element={
-                <CSSTransition key="projects" classNames="fade" timeout={5000}>
-                  <Projects />
-                </CSSTransition>
-              }
-            />
-            <Route
-              path="/about"
-              element={
-                <CSSTransition key="about" classNames="fade" timeout={5000}>
-                  <About />
-                </CSSTransition>
-              }
-            />
-            <Route
-              path="/blog"
-              element={
-                <CSSTransition key="blog" classNames="fade" timeout={5000}>
-                  <Blog />
-                </CSSTransition>
-              }
-            />
-            <Route
-              path="/contact"
-              element={
-                <CSSTransition key="contact" classNames="fade" timeout={5000}>
-                  <Contact />
-                </CSSTransition>
-              }
-            />
-          </Routes>
-        </TransitionGroup>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Home />
+                <Navigation lock={false}/>
+                <Navigation isNavFixed={isNavFixed} lock={true} />
+                <Projects />
+                <About/>
+              </>
+            }
+          />
+        </Routes>
       </BrowserRouter>
     </>
   );
 }
 
 export default App;
-

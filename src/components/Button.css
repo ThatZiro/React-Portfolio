@@ -1,0 +1,41 @@
+.view-work {
+    margin: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 6;
+}
+
+.light-theme button {
+    position: relative;
+    background: transparent;
+    color: white;
+    font-size: 2rem;
+    padding: 10px 50px;
+    border: 2px solid white;
+    border-radius: 15px;
+    transition: all ease-in-out .4s;
+}
+
+.light-theme button:hover {
+    background: #408CC7;
+    border-radius: 25px;
+    scale: 105%;
+}
+
+.dark-theme button {
+    position: relative;
+    background: transparent;
+    color: #060918; /* Dark theme text color */
+    font-size: 2rem;
+    padding: 10px 50px;
+    border: 2px solid #060918; /* Dark theme border color */
+    border-radius: 15px;
+    transition: all ease-in-out .4s;
+}
+
+.dark-theme button:hover {
+    background: #408bc6; /* Dark theme background color on hover */
+    border-radius: 25px;
+    scale: 105%;
+}

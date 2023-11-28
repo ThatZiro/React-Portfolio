@@ -1,22 +1,13 @@
-/* App.css */
 
-/* ... your existing styles ... */
-
-/* Define the fade transition */
-.fade-enter {
-    opacity: 0.01;
+.fixed {
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    z-index: 1000;
+    transition: all ease-in-out .5s;
 }
 
-.fade-enter.fade-enter-active {
-    opacity: 1;
-    transition: opacity 300ms ease-in;
-}
-
-.fade-exit {
-    opacity: 1;
-}
-
-.fade-exit.fade-exit-active {
-    opacity: 0.01;
-    transition: opacity 300ms ease-in;
+.hidden {
+    display: none;
 }

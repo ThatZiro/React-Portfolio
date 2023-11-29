@@ -1,27 +1,33 @@
 .contact {
-    transform: translateY(-100px);
     height: 100vh;
-    opacity: 75%;
     z-index: -2; /* Ensure the canvas is behind other elements */
-    color: white;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     padding: 50px;
+    background-color: #111423;
 }
 
-.contact h1 {
-    font-size: 6rem;
-    align-self: center;
-}
 
 form {
-    background: var(--mainGrey);
+    background: #e8ebf7;
     width: 60%;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 750px;
+}
+
+form h1 {
+    text-align: center;
+    color: #0f1323;
+    font-size: 4rem;
+}
+form h2 {
+    text-align: center;
+    color: #00bbff;
+    font-size: 2rem;
 }
 
 .form-group {
@@ -32,6 +38,10 @@ form {
     font-size: 2rem;
 }
 
+.form-group label {
+    color: #0f1323;
+}
+
 .input {
     height: 50px;
     border-radius: 5px;
@@ -39,13 +49,14 @@ form {
     border: 1px solid #303030;
     border-bottom: 2px solid #9a9a9a;
     background-color: transparent;
-    color: white;
-    transition: all 0.3s ease;
+    color: #0f1323;
+    font-weight: bold;
+    transition: all 0.1s ease;
     cursor: pointer;
     font-size: 1.5rem;
     padding: 5px 20px;
+    box-sizing: border-box;
 }
-
 .input::placeholder {
     color: #9a9a9a;
 }
@@ -53,9 +64,9 @@ form {
 
 .input:active,
 .input:focus {
-    background-color: var(--mainBackground);
+    background-color: #ffffff;
     border: 1px solid #2d2d2d;
-    border-bottom: 2px solid rgb(191, 83, 253);
+    border-bottom: 4px solid #00bbff;
 }
 
 .input-message{
@@ -75,16 +86,17 @@ form {
 .form-group button {
     position: relative;
     background: transparent;
-    color: white;
+    color: #0f1323;
     font-size: 2rem;
     padding: 10px 50px;
-    border: 2px solid white;
+    border: 2px solid #0f1323;
     border-radius: 15px;
     transition: all ease-in-out .4s;
 }
 
 .form-group button:hover {
-    background: rgb(191, 83, 253);
+    background: #00bbff;
+    color: white;
     border-radius: 25px;
     scale: 102%;
 }

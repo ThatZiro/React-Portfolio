@@ -1,19 +1,29 @@
 .hexagon {
     position: relative;
-    transform: translateX(50%) translateY(-150px);
+    color: white;
+    width: 20%;
 }
 
 .hexagon h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 900;
-    color: var(--mainGrey)
+    color: white;
+    text-align: center;
 }
 
-.hexagon svg,
-.hexagon h1
+.hexagon svg
 {
     position: absolute;
-    left: 0;
-    top:0;
+    left: 50%;
+    top: 0;
     transform: translate(-50%, -50%);
+}
+
+.hexagon .image {
+    height: 125px;
+}
+
+.hexagon p {
+    margin: 25px;
+    text-align: center;
 }

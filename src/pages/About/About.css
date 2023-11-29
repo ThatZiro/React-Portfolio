@@ -1,0 +1,69 @@
+.about-me {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111423;
+    padding: 100px;
+    gap: 150px;
+}
+
+.about-me .cards {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me h1 {
+    color: white;
+    font-size: 4rem;
+}
+
+.about-me .section-2 {
+    display: flex;
+    gap: 50px;
+    width: 80%;
+    color: white;
+}
+
+.skills-section, .about-section{
+    width: 50%;
+    background-color: #e8ebf8;
+    color: black;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about-section {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about-section .Bold {
+    font-weight: bold;
+}
+
+.about-education .edu-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-section h2 {
+    font-size:  1.5rem;
+}
+
+.about-section .edu {
+    border-bottom: 2px black solid  ;
+}
+
+.about-section .edu:first-child {
+    border-top: 2px black solid  ;
+}

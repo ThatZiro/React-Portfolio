@@ -25,6 +25,8 @@ function Contact() {
   return (
     <div className="contact">
       <form onSubmit={handleSubmit}>
+        <h1>CONTACT</h1>
+        <h2>Have a question or want to work together?</h2>
         <div className="form-group">
           <label htmlFor="name">Name</label>
           <input

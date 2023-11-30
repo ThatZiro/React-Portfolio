@@ -4,11 +4,24 @@
 }
 
 :root {
+    /*Temp*/
     --mainGrey: #101424;
+
     --mainBackground: #060918;
+    --accentBlue : #408CC7;
+    --accentBlue_10: #40a3c7;
+    --accentBlue_20: #40b3c7;
+    --accentBlue_30: #4ac5c5;
+
+    --white : #f5f5f5;
 }
 
 body {
     background: var(--mainBackground);
     overflow-x: hidden ;
+}
+
+
+.wrapper {
+    max-width: 1750px;
 }

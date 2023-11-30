@@ -3,7 +3,6 @@
     width: 100%;
     font-size: 4rem;
     text-align: center;
-    color: rgb(255, 255, 255);
     z-index: 6;
 }
 
@@ -25,7 +24,6 @@
     height: 300px;
     transform: translate(50%, 50%);
     background: transparent;
-    /*backdrop-filter: blur(5px);*/
     border-radius: 20%;
     z-index: 5;
 }
@@ -35,33 +33,31 @@
     font-size: 4rem;
     text-align: center;
     font-weight: 100;
-    color: #408CC7;
-
-    /*transition: font-weight ease-in-out .1s;*/
+    color: var(--accentBlue);
     cursor: pointer;
 }
 
 .hoverText:hover{
     font-weight: 900;
-    color: rgb(191, 83, 253);
+    color: var(--accentBlue_30);
 
 }
 
 .hoverText:hover + .hoverText {
     font-weight: 500;
-    color: rgb(156, 51, 255);
+    color: var(--accentBlue_20);
 }
 
 .hoverText:hover + .hoverText + .hoverText{
     font-weight: 300;
-    color: rgb(91, 28, 199);
+    color: var(--accentBlue_10);
 }
 
 .hoverText:has(+ .hoverText:hover) {
     font-weight: 500;
-    color: rgb(156, 51, 255);
+    color: var(--accentBlue_20);
 }
 .hoverText:has(+ .hoverText +.hoverText:hover) {
     font-weight: 300;
-    color: rgb(91, 28, 199);
+    color: var(--accentBlue_10);
 }

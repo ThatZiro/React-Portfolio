@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #111423;
+    background-color: #dcdfec;
     padding: 100px;
     gap: 150px;
 }
@@ -15,7 +15,7 @@
 }
 
 .about-me h1 {
-    color: white;
+    color: #111423;
     font-size: 4rem;
 }
 
@@ -23,7 +23,7 @@
     display: flex;
     gap: 50px;
     width: 80%;
-    color: white;
+    color: #111423;
 }
 
 .skills-section, .about-section{
@@ -66,4 +66,12 @@
 
 .about-section .edu:first-child {
     border-top: 2px black solid  ;
+}
+
+.about-divider {
+    background-color: #111423;
+}
+/* Fixed a big with the SVG Spacing*/
+.Div-Fix {
+    background-color: #111423;
 }

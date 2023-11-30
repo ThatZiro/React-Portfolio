@@ -3,9 +3,6 @@ import Hexagon from './Hexagon.jsx';
 import Skill from './skill.jsx';
 
 function About() {
-  
-  const width = window.screen.width;
-  const height = window.screen.width * .10;
   return (
     <>
       <div className="about-me">
@@ -90,11 +87,10 @@ function About() {
           </div>
         </div>
       </div>
-      <svg preserveAspectRatio="none" className="about-divider" xmlns="http://www.w3.org/2000/svg" width="100%" height="150px" viewBox="0 0 1729 269" fill="none">
-        <path opacity="0.66" d="M0 0V87.2442L861.231 269L1729 72.7091V0H0Z" fill="#DEE1EE"/>
-        <path d="M0 0H1729L861.231 214.32L0 0Z" fill="#111423"/>
-      </svg>
-      
+        <svg preserveAspectRatio="none" className="about-divider" xmlns="http://www.w3.org/2000/svg" width="100vw" height="150px" viewBox="0 0 1729 269" >
+          <path opacity="0.66" d="M0 0V87.2442L861.231 269L1729 72.7091V0H0Z" fill="#DEE1EE"/>
+          <path d="M0 0H1729L861.231 214.32L0 0Z" fill="#DEE1EE"/>
+        </svg>
     </>
   );
 }

@@ -4,8 +4,8 @@ html {
 #Projects {
     padding: 50px;
     /*background: linear-gradient(180deg, rgba(6, 9, 24, 0.00) 0%, #060918 10%);*/
-    background-color: #EAEDFA;
-    color: #111423;
+    background-color: var(--white);
+    color: var(--mainOffBackground);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,7 +14,7 @@ html {
 }
 
 .projects h1 {
-    color: #111423;
+    color: var(--mainOffBackground);
     position: relative;
     font-size: 3rem;
     margin-bottom: 20px;
@@ -24,7 +24,7 @@ html {
     position: relative;
     display: flex;
     justify-content: center;
-    background: #DEE1EE;
+    background: var(--white);
     font-size: 1.5rem;
 }
 
@@ -37,11 +37,11 @@ html {
     cursor: pointer;
 }
 .projects .menu h3:not(.selected):hover {
-    color: #408bc6;
+    color: var(--accentBlue);
 }
 
 .projects .menu .selected {
-    color: #ffffff;
+    color: var(--white);
 }
 
 .projects .menu .selector {
@@ -50,7 +50,7 @@ html {
     right: 75%;
     top: 0;
     bottom: 0;
-    background-color: #408CC7;
+    background-color: var(--accentBlue);
     z-index: 1;
     transition: all .5s cubic-bezier(0.68, -0.25, 0.27, 0.55); /* Adjust the cubic-bezier for a smoother stretch effect */
 }
@@ -97,12 +97,12 @@ html {
 }
 
 .project-img {
-    background: rgba(4, 7, 23, 0.8);
+    background: rgba(var(--mainOffBackground) 0.8);
     transition: all ease-in-out .5s;
 }
 .project h2 {
     font-size: 2.5rem;
-    color: white;
+    color: var(--white);
     text-align: center;
 }
 
@@ -117,7 +117,7 @@ html {
 .project h3 {
     font-size: 2rem;
     font-weight: normal;
-    color: rgba(228, 66, 255, 0.5);
+    color: rgba(var(--accentBlue), 0.5);
 }
 
 .projects .hover {
@@ -136,7 +136,7 @@ html {
 
 .hover h4 {
     font-size: 1rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(var(--white), 0.5);
 }
 .project-img {
     height: 100%;
@@ -144,7 +144,7 @@ html {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: #0f1323;
+    background-color: var(--mainOffBackground);
 }
 
 .project:hover .project-img{
@@ -197,29 +197,29 @@ html {
 }
 
 .project-modal {
-    background-color: white;
+    background-color: var(--white);
     width: 40%;
     height: 80%;
     border-radius: 50px;
 }
 
 .modal-title {
-    background-color: #111423;
+    background-color: var(--mainOffBackground);
     border-radius: 25px 25px 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px ;
-    border-bottom: #3783BE 4px solid;
+    border-bottom: var(--accentBlue) 4px solid;
 }
 
 .modal-title h1 {
-    color: white;
+    color: var(--white);
     margin: 0;
 }
 .modal-img {
     height: 50%;
-    background-color: #060918;
+    background-color: var(--mainOffBackground);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

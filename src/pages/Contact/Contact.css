@@ -6,12 +6,12 @@
     justify-content: center;
     align-items: center;
     padding: 50px;
-    background-color: #111423;
+    background-color: var(--mainOffBackground);
 }
 
 
 form {
-    background: #e8ebf7;
+    background: var(--white);
     width: 60%;
     padding: 20px;
     border-radius: 8px;
@@ -21,12 +21,12 @@ form {
 
 form h1 {
     text-align: center;
-    color: #0f1323;
+    color: var(--mainOffBackground);
     font-size: 4rem;
 }
 form h2 {
     text-align: center;
-    color: #00bbff;
+    color: var(--accentBlue);
     font-size: 2rem;
 }
 
@@ -39,17 +39,17 @@ form h2 {
 }
 
 .form-group label {
-    color: #0f1323;
+    color: var(--mainOffBackground);
 }
 
 .input {
     height: 50px;
     border-radius: 5px;
     outline: none;
-    border: 1px solid #303030;
-    border-bottom: 2px solid #9a9a9a;
+    border: 1px solid var(--gray);
+    border-bottom: 2px solid var(--white);
     background-color: transparent;
-    color: #0f1323;
+    color: var(--mainOffBackground);
     font-weight: bold;
     transition: all 0.1s ease;
     cursor: pointer;
@@ -58,15 +58,15 @@ form h2 {
     box-sizing: border-box;
 }
 .input::placeholder {
-    color: #9a9a9a;
+    color: var(--white);
 }
 
 
 .input:active,
 .input:focus {
-    background-color: #ffffff;
-    border: 1px solid #2d2d2d;
-    border-bottom: 4px solid #00bbff;
+    background-color: var(--white);
+    border: 1px solid var(--mainOffBackground);
+    border-bottom: 4px solid var(--accentBlue);
 }
 
 .input-message{
@@ -86,17 +86,17 @@ form h2 {
 .form-group button {
     position: relative;
     background: transparent;
-    color: #0f1323;
+    color: var(--mainOffBackground);
     font-size: 2rem;
     padding: 10px 50px;
-    border: 2px solid #0f1323;
+    border: 2px solid var(--mainBackground);
     border-radius: 15px;
     transition: all ease-in-out .4s;
 }
 
 .form-group button:hover {
-    background: #00bbff;
-    color: white;
+    background: var(--accentBlue);
+    color: var(--white);
     border-radius: 25px;
     scale: 102%;
 }

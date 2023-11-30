@@ -1,7 +1,7 @@
 .footer {
-    background-color: #050817;
+    background-color: var(--mainBackground);
     height: 50%;
-    color: white;
+    color: var(--white);
     padding: 25px;
     display: flex;
     justify-content: center;
@@ -10,10 +10,10 @@
 }
 
 .footer-footer p{
-    color: #408bc6;
+    color: var(--accentBlue);
     font-size: 1.75rem;
     text-align: center;
-    border-top: 5px solid #070c23;
+    border-top: 5px solid var(--accentBlue);
     padding-top: 25px;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .footer-card {
-    background-color: #101322;
+    background-color: var(--mainOffBackground);
     border-radius: 25px;
     padding: 25px;
 }

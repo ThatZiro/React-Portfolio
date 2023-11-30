@@ -1,5 +1,5 @@
 .skill {
-    color: white;
+    color: var(--white);
     position: relative;
     width: 100%;
     display: flex;
@@ -8,13 +8,13 @@
 }
 
 .skill .label {
-    background: #ac26c2;
+    background: var(--accentBlue);
     padding: 10px;
     width: 25%;
 }
 
 .skill .fill {
-    background: #781388;
+    background: var(--accentBlue_30);
     position: absolute;
     left: 20%;
     top: 0;
@@ -22,8 +22,8 @@
 }
 
 .skill .background {
-    color: black;
-    background: #adadad;
+    color: var(--mainOffBackground);
+    background: var(--offwhite);
     position: absolute;
     right: 0;
     left: 0;

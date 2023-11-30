@@ -1,13 +1,13 @@
 .hexagon {
     position: relative;
-    color: #111423;
+    color: var(--mainOffBackground);
     width: 20%;
 }
 
 .hexagon h1 {
     font-size: 2rem;
     font-weight: 900;
-    color: #111423;
+    color: var(--mainOffBackground);
     text-align: center;
 }
 

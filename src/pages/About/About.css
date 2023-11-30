@@ -70,8 +70,6 @@
 
 .about-divider {
     background-color: #111423;
+    margin-bottom: -5px;
 }
 /* Fixed a big with the SVG Spacing*/
-.Div-Fix {
-    background-color: #111423;
-}

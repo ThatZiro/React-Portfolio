@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Inter:wght@400;500;600;700&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -13,9 +14,11 @@
 
     --white : #e9ebf7;
     --offwhite: #dcdfeb;
+    --offwhite-2: #a2a6b6;
     --gray : #303030;
 
     font-size: 12px;
+    font-family: Inter, sans-serif;
 }
 
 body {

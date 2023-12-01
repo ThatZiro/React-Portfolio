@@ -1,5 +1,6 @@
-button {
-    font-family: inherit;
+.contact-button {
+    font-family: Inter, sans-serif;
+    font-weight: 600;
     font-size: 20px;
     background: var(--accentBlue);
     color: white;
@@ -13,35 +14,35 @@ button {
     cursor: pointer;
 }
 
-button span {
+.contact-button span {
     display: block;
     margin-left: 0.3em;
     transition: all 0.3s ease-in-out;
 }
 
-button svg {
+.contact-button svg {
     display: block;
     transform-origin: center center;
     transition: transform 0.3s ease-in-out;
 }
 
-button:hover {
+.contact-button:hover {
     background-color: var(--accentBlue_30);
 }
 
-button:hover .svg-wrapper {
+.contact-button:hover .svg-wrapper {
     animation: fly-1 0.6s ease-in-out infinite alternate;
 }
 
-button:hover svg {
+.contact-button:hover svg {
     transform: translateX(1.2em) rotate(45deg) scale(1.1);
 }
 
-button:hover span {
+.contact-button:hover span {
     transform: translateX(10em);
 }
 
-button:active {
+.contact-button:active {
     transform: scale(0.95);
 }
 

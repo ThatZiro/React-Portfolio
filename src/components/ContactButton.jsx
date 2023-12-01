@@ -4,7 +4,7 @@ import Plane from './Plane.jsx';
 function ContactButton() {
 
     return (
-      <button>
+      <button className="contact-button">
           <div className="svg-wrapper-1">
               <Plane></Plane>
           </div>

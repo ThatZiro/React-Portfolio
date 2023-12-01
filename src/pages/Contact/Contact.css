@@ -30,7 +30,7 @@ form h1 {
 }
 form h2 {
     text-align: center;
-    color: var(--accentBlue);
+    color: var(--gray);
     font-size: 2rem;
     font-weight: normal;
 }

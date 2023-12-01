@@ -8,12 +8,17 @@
     flex-direction: column;
     align-items: center;
 }
+.footer-footer {
+    width: 100%;
+}
 
 .footer-footer p{
     color: var(--accentBlue);
-    font-size: 1.75rem;
+    font-size: 2rem;
+    font-weight: 600;
     text-align: center;
-    border-top: 5px solid var(--accentBlue);
+    border-top: 4px solid var(--mainOffBackground);
+
     padding-top: 25px;
 }
 

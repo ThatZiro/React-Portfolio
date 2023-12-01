@@ -49,12 +49,20 @@ function Projects() {
     { title: "ComingSoon3", tech: "Javascript / Api", src: "/Sub-Project-4.png", section: "" , to:"/ListyFlix"},
   ];
   
-  // Filter projects based on the selected section
-  const filteredProjects = projects.filter(project => {
+  const filteredProjects = projects.map(project => {
     const sections = project.section.split(',').map(s => s.trim());
-    return selectedSection === 'All' || sections.includes(selectedSection);
+    const isInSelectedSection = selectedSection === 'All' || sections.includes(selectedSection);
+    
+    // Add a class based on the condition
+    const fadeClass = isInSelectedSection ? 'fade-in' : 'fade-out';
+    
+    // Update the project object with the fadeClass
+    return {
+      ...project,
+      fadeClass,
+    };
   });
-  
+
   return (
     <>
       <div id="Projects" className="projects">
@@ -67,15 +75,20 @@ function Projects() {
           <h3 id="Mongo" onClick={() => moveSelector(document.getElementById('Mongo'))}>MongoDB</h3>
         </div>
         <div className="projects-list">
-          {filteredProjects.map(project => (
-            <Project
-              key={project.title}
-              title={project.title}
-              tech={project.tech}
-              src={project.src}
-              onClick={() => openModal(project)}
-            />
-          ))}
+          {filteredProjects.map((project, index) => {
+            console.log(project); // This line should be inside curly braces
+            return (
+              <Project
+                fade={project.fadeClass}
+                title={project.title}
+                tech={project.tech}
+                src={project.src}
+                onClick={() => openModal(project)}
+              />
+            );
+          })}
+
+
           
           {/* Modal */}
           {modalVisible && (

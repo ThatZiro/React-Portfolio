@@ -1,8 +1,8 @@
 import './Projects.css'
-function Project({ title, tech, src, onClick}) {
+function Project({ title, tech, src, onClick, fade}) {
   return (
     <>
-      <div className={`project ${title}`} onClick={onClick}>
+      <div className={`project ${title} ${fade}`} onClick={onClick}>
         <div className="hover">
           <div>
             <h2>{title}</h2>

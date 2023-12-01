@@ -14,8 +14,10 @@
 
     --white : #e9ebf7;
     --offwhite: #dcdfeb;
+    --offwhite-1: #EAE9F7;
     --offwhite-2: #a2a6b6;
-    --gray : #303030;
+    --gray : #404040;
+    --gray-2: #6B718E;
 
     font-size: 12px;
     font-family: Inter, sans-serif;

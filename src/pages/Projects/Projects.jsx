@@ -36,7 +36,6 @@ function Projects() {
     
     // Update the selected section
     setSelectedSection(element.id);
-    console.log(element.id);
   };
   
   const projects = [
@@ -54,12 +53,12 @@ function Projects() {
     const isInSelectedSection = selectedSection === 'All' || sections.includes(selectedSection);
     
     // Add a class based on the condition
-    const fadeClass = isInSelectedSection ? 'fade-in' : 'fade-out';
+    const fadeState = isInSelectedSection;
     
     // Update the project object with the fadeClass
     return {
       ...project,
-      fadeClass,
+      fadeState,
     };
   });
 
@@ -76,10 +75,10 @@ function Projects() {
         </div>
         <div className="projects-list">
           {filteredProjects.map((project, index) => {
-            console.log(project); // This line should be inside curly braces
             return (
               <Project
-                fade={project.fadeClass}
+                key={index}
+                fadeState={project.fadeState}
                 title={project.title}
                 tech={project.tech}
                 src={project.src}

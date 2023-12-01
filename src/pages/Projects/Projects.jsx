@@ -40,13 +40,13 @@ function Projects() {
   };
   
   const projects = [
-    { title: "ListyFlix", tech: "Javascript / Api", src: "src/assets/Listy-Flix.png", section: "JS", to:"/ListyFlix", intro:"Movie Database", stack:"HTML | CSS | JavaScript | Tailwind CSS | Jquery | RESTFUL Apis", desc:"This project showcases my expertise in web development using HTML, CSS, JavaScript, jQuery, and Tailwind CSS. It fetches data from external APIs, including OMDB for movie details and Stream Availability for streaming options. The clean, responsive design ensures an optimal user experience, highlighting my ability to seamlessly integrate multiple technologies for dynamic and informative web applications."},
-    { title: "Tasty Tableau", tech: "Node.js / MySQL", src: "src/assets/Tasty-Tableau.png", section: "JS" , to:"/ListyFlix"},
-    { title: "Hey Hedgie", tech: "MERN Stack", src: "src/assets/HeyHedgie.png", section: "React, Mongo" , to:"/ListyFlix"},
-    { title:  "ComingSoon", tech: "Javascript / Api", src: "src/assets/Sub-Project-1.png", section: "Mongo" , to:"/ListyFlix"},
-    { title: "ComingSoon1", tech: "Javascript / Api", src: "src/assets/Sub-Project-2.png", section: "" , to:"/ListyFlix"},
-    { title: "ComingSoon2", tech: "Javascript / Api", src: "src/assets/Sub-Project-3.png", section: "React" , to:"/ListyFlix"},
-    { title: "ComingSoon3", tech: "Javascript / Api", src: "src/assets/Sub-Project-4.png", section: "" , to:"/ListyFlix"},
+    { title: "ListyFlix", tech: "Javascript / Api", src: "/Listy-Flix.png", section: "JS", to:"/ListyFlix", intro:"Movie Database", stack:"HTML | CSS | JavaScript | Tailwind CSS | Jquery | RESTFUL Apis", desc:"This project showcases my expertise in web development using HTML, CSS, JavaScript, jQuery, and Tailwind CSS. It fetches data from external APIs, including OMDB for movie details and Stream Availability for streaming options. The clean, responsive design ensures an optimal user experience, highlighting my ability to seamlessly integrate multiple technologies for dynamic and informative web applications."},
+    { title: "Tasty Tableau", tech: "Node.js / MySQL", src: "/Tasty-Tableau.png", section: "JS" , to:"/ListyFlix"},
+    { title: "Hey Hedgie", tech: "MERN Stack", src: "/HeyHedgie.png", section: "React, Mongo" , to:"/ListyFlix"},
+    { title:  "ComingSoon", tech: "Javascript / Api", src: "/Sub-Project-1.png", section: "Mongo" , to:"/ListyFlix"},
+    { title: "ComingSoon1", tech: "Javascript / Api", src: "/Sub-Project-2.png", section: "" , to:"/ListyFlix"},
+    { title: "ComingSoon2", tech: "Javascript / Api", src: "/Sub-Project-3.png", section: "React" , to:"/ListyFlix"},
+    { title: "ComingSoon3", tech: "Javascript / Api", src: "/Sub-Project-4.png", section: "" , to:"/ListyFlix"},
   ];
   
   // Filter projects based on the selected section

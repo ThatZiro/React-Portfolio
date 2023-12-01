@@ -13,6 +13,7 @@ function Project({ title, tech, src, onClick}) {
         </div>
         <div className="project-img" style={{ backgroundImage: `url(${src})` }}></div>
 
+
       </div>
     </>
   );

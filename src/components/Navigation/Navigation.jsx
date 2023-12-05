@@ -17,9 +17,9 @@ function Navigation({ isNavFixed, lock }) {
       <ScrollLink to="Contact" spy={true} smooth={true} offset={0} duration={500} className="link">
         Contact
       </ScrollLink>
-      <ScrollLink to="Footer" spy={true} smooth={true} offset={0} duration={500} className="link">
-        Blog
-      </ScrollLink>
+      {/*<ScrollLink to="Footer" spy={true} smooth={true} offset={0} duration={500} className="link">*/}
+      {/*  Blog*/}
+      {/*</ScrollLink>*/}
     </nav>
   );
 }

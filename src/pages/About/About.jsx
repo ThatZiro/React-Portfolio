@@ -2,6 +2,9 @@ import './About.css';
 import Hexagon from './Hexagon.jsx';
 import Skill from './skill.jsx';
 import ProfilePic from '../../../public/ProfilePicture.png'
+import {Link as ScrollLink} from 'react-scroll';
+import React from 'react';
+import Resume from '../../../public/BrandonBanresResume.docx.pdf'
 function About() {
   return (
     <>
@@ -24,9 +27,13 @@ function About() {
               <p>MongoDB University <span>2023</span></p>
             </div>
             <div className="resume">
-              <button>Download Resume</button>
+              <a href={Resume} download="BrandonBarnesResume.pdf">
+                <button>Download Resume</button>
+              </a>
               {/*<button>Visit Blog</button>*/}
-              <button className="CTA">View My Work</button>
+              <ScrollLink to={"Projects"} spy={true} smooth={true} offset={0} duration={500}>
+                <button className="CTA">View My Work</button>
+              </ScrollLink>
             </div>
           </div>
         </div>

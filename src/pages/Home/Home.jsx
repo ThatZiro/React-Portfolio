@@ -1,7 +1,7 @@
 import './Home.css';
 import Background from './background.jsx';
 import BubbleText from './Bubbletext.jsx';
-import Button from '../../components/Button.jsx';
+import Button from '../../components/Button/Button.jsx';
 
 function Home() {
   return (

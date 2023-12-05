@@ -1,5 +1,5 @@
 import "./ContactButton.css"
-import Plane from './Plane.jsx';
+import Plane from '../Plane/Plane.jsx';
 
 function ContactButton() {
 

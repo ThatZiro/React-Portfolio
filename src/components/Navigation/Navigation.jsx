@@ -8,16 +8,16 @@ function Navigation({ isNavFixed, lock }) {
       <ScrollLink to="Home" spy={true} smooth={true} offset={-70} duration={500} className="link">
         Home
       </ScrollLink>
-      <ScrollLink to="Projects" spy={true} smooth={true} offset={-50} duration={500} className="link">
-        Projects
-      </ScrollLink>
-      <ScrollLink to="About" spy={true} smooth={true} offset={-70} duration={500} className="link">
+      <ScrollLink to="About" spy={true} smooth={true} offset={0} duration={500} className="link">
         About
       </ScrollLink>
-      <ScrollLink to="Contact" spy={true} smooth={true} offset={-70} duration={500} className="link">
+      <ScrollLink to="Projects" spy={true} smooth={true} offset={0} duration={500} className="link">
+        Projects
+      </ScrollLink>
+      <ScrollLink to="Contact" spy={true} smooth={true} offset={0} duration={500} className="link">
         Contact
       </ScrollLink>
-      <ScrollLink to="Blog" spy={true} smooth={true} offset={-70} duration={500} className="link">
+      <ScrollLink to="Footer" spy={true} smooth={true} offset={0} duration={500} className="link">
         Blog
       </ScrollLink>
     </nav>

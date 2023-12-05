@@ -1,11 +1,10 @@
 .about-me {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--offwhite);
+    background-color: var(--white);
     padding: 100px;
-    gap: 150px;
+    gap: 50px;
     min-height: 1250px;
 }
 
@@ -28,23 +27,33 @@
 }
 
 .skills-section, .about-section{
-    width: 50%;
-    background-color: var(--white);
     color: var(--mainOffBackground);
     padding: 25px;
     border-radius: 15px;
+    display: flex;
+    align-items: center;
 }
 
 .skills-section {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    width: 50%;
+}
+.cards {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards .hexagon {
+    width: 50%;
+    margin-top: 100px;
 }
 
 .about-section {
     font-size: 1.5rem;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
 }
 
@@ -73,4 +82,68 @@
     background-color: var(--mainOffBackground);
     margin-bottom: -5px;
 }
-/* Fixed a big with the SVG Spacing*/
+.section-1 .about-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-1 .about-header img {
+    height: 250px
+}
+.section-1 .about-header div {
+    width: 60%;
+}
+
+.section-1 .about-header p {
+    font-size: 1.5rem;
+}
+.section-1 .about-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-1 h1 {
+    font-size: 2.5rem;
+}
+
+.certifications {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.certifications span {
+    color: var(--mainOffBackground);
+    font-size: 1.75rem;
+    font-style: italic;
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+.resume button {
+    width: 200px;
+    height: 50px;
+    background-color: var(--accentBlue_30);
+    border-radius: 10px;
+    border: none;
+    box-shadow:0px 4px 0px 0px var(--accentBlue_20);
+    transition: all ease-in .2s;
+}
+
+.resume button:hover,
+.resume button.CTA:hover{
+    box-shadow:none;
+    transform: translateY(4px);
+    transition: all ease-in .1s;
+}
+
+.resume button.CTA {
+    background-color: var(--accentPurple);
+    box-shadow:0px 4px 0px 0px var(--accentPurple_10);
+    color: white;
+}

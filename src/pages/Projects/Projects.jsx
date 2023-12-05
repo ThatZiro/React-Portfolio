@@ -1,7 +1,8 @@
 import './Projects.css'
-import Button from '../../components/Button.jsx';
+import Button from '../../components/Button/Button.jsx';
 import Project from './Project.jsx';
 import {useState} from 'react';
+import MyProjects from './MyProjects.js';
 function Projects() {
   const [selectorPosition, setSelectorPosition] = useState({ left: 0, right: '75%' });
   const [selectedSection, setSelectedSection] = useState('All');
@@ -38,16 +39,7 @@ function Projects() {
     setSelectedSection(element.id);
   };
   
-  const projects = [
-    { title: "ListyFlix", tech: "Javascript / Api", src: "/Listy-Flix.png", section: "JS", to:"/ListyFlix", intro:"Movie Database", stack:"HTML | CSS | JavaScript | Tailwind CSS | Jquery | RESTFUL Apis", desc:"This project showcases my expertise in web development using HTML, CSS, JavaScript, jQuery, and Tailwind CSS. It fetches data from external APIs, including OMDB for movie details and Stream Availability for streaming options. The clean, responsive design ensures an optimal user experience, highlighting my ability to seamlessly integrate multiple technologies for dynamic and informative web applications."},
-    { title: "Tasty Tableau", tech: "Node.js / MySQL", src: "/Tasty-Tableau.png", section: "JS" , to:"/ListyFlix"},
-    { title: "Hey Hedgie", tech: "MERN Stack", src: "/HeyHedgie.png", section: "React, Mongo" , to:"/ListyFlix"},
-    { title:  "ComingSoon", tech: "Javascript / Api", src: "/Sub-Project-1.png", section: "Mongo" , to:"/ListyFlix"},
-    { title: "ComingSoon1", tech: "Javascript / Api", src: "/Sub-Project-2.png", section: "" , to:"/ListyFlix"},
-    { title: "ComingSoon2", tech: "Javascript / Api", src: "/Sub-Project-3.png", section: "React" , to:"/ListyFlix"},
-    { title: "ComingSoon3", tech: "Javascript / Api", src: "/Sub-Project-4.png", section: "" , to:"/ListyFlix"},
-  ];
-  
+  const projects = MyProjects();
   const filteredProjects = projects.map(project => {
     const sections = project.section.split(',').map(s => s.trim());
     const isInSelectedSection = selectedSection === 'All' || sections.includes(selectedSection);
@@ -124,7 +116,7 @@ function Projects() {
                   <h2>{selectedProject.tech}</h2>
                   <p>{selectedProject.desc}</p>
                   <div className="modal-nav">
-                    <Button to={selectedProject.to} id={`${selectedProject.title}Site`} text="Visit Site" theme="dark" />
+                    <Button link={selectedProject.link} id={`${selectedProject.title}Site`} text="Visit Site" theme="dark" />
                     <svg className="modal-close" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none" onClick={closeModal}>
                       <path className="modal-close-color" d="M6.25 0C2.80273 0 0 3.20313 0 7.14286V42.8571C0 46.7969 2.80273 50 6.25 50H43.75C47.1973 50 50 46.7969 50 42.8571V7.14286C50 3.20313 47.1973 0 43.75 0H6.25ZM17.0898 15.9598C18.0078 14.9107 19.4922 14.9107 20.4004 15.9598L24.9902 21.2054L29.5801 15.9598C30.498 14.9107 31.9824 14.9107 32.8906 15.9598C33.7988 17.0089 33.8086 18.7054 32.8906 19.7433L28.3008 24.9888L32.8906 30.2344C33.8086 31.2835 33.8086 32.9799 32.8906 34.0179C31.9727 35.0558 30.4883 35.067 29.5801 34.0179L24.9902 28.7723L20.4004 34.0179C19.4824 35.067 17.998 35.067 17.0898 34.0179C16.1816 32.9687 16.1719 31.2723 17.0898 30.2344L21.6797 24.9888L17.0898 19.7433C16.1719 18.6942 16.1719 16.9978 17.0898 15.9598Z" fill="black" />
                     </svg>
@@ -135,6 +127,10 @@ function Projects() {
           )}
         </div>
       </div>
+      <svg preserveAspectRatio="none" className="about-divider" xmlns="http://www.w3.org/2000/svg" width="100vw" height="150px" viewBox="0 0 1729 269" >
+        <path opacity="0.66" d="M0 0V87.2442L861.231 269L1729 72.7091V0H0Z" fill="#e9ebf7"/>
+        <path d="M0 0H1729L861.231 214.32L0 0Z" fill="#DEE1EE"/>
+      </svg>
     </>
   );
 }

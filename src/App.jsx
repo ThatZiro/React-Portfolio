@@ -38,8 +38,8 @@ function App() {
                 <Home />
                 <Navigation lock={false}/>
                 <Navigation isNavFixed={isNavFixed} lock={true} />
-                <Projects/>
                 <About/>
+                <Projects/>
                 <Contact/>
                 <Footer/>
               </>

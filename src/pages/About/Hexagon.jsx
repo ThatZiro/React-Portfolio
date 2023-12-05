@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hexagon.css'
 
-const size = 200;
+const size = 175;
 const height = size;
 const width = size * 136/150;
 const scale = 25;

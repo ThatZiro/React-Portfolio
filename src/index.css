@@ -12,6 +12,9 @@
     --accentBlue_20: #a8c7f5;
     --accentBlue_30: #a8d7f5;
 
+    --accentPurple: #20004d;
+    --accentPurple_10: #5d3496;
+
     --white : #e9ebf7;
     --offwhite: #dcdfeb;
     --offwhite-1: #EAE9F7;
@@ -32,3 +35,5 @@ body {
 .wrapper {
     max-width: 1750px;
 }
+
+

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Contact.css';
-import ContactButton from '../../components/ContactButton.jsx';
-import Plane from '../../components/Plane.jsx';
+import ContactButton from '../../components/ContactButton/ContactButton.jsx';
+import Plane from '../../components/Plane/Plane.jsx';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -27,14 +27,14 @@ function Contact() {
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your form submission logic here
     setSubmitted(true);
+    //Logic Here
     console.log(e);
     console.log('Form submitted:', formData);
   };
   
   return (
-    <div className="contact">
+    <div id="Contact" className="contact">
       <form onSubmit={handleSubmit}>
         {!submitted ? (
           <>

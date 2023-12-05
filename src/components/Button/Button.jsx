@@ -1,7 +1,7 @@
 import { Link as ScrollLink } from 'react-scroll';
 import "./Button.css"
 
-function Button({ to, id, text, theme = "light"}) {
+function Button({ to, link, id, text, theme = "light"}) {
   const themeClass = theme === "dark" ? "dark-theme" : "light-theme";
   
   return (
@@ -12,6 +12,11 @@ function Button({ to, id, text, theme = "light"}) {
             <span>{text} ➔</span>
           </button>
         </ScrollLink>
+      )}
+      {link && (
+        <button onClick={() => window.open(link, '_blank')}>
+          <span>{text} ➔</span>
+        </button>
       )}
     </div>
   );

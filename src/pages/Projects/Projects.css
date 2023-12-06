@@ -294,3 +294,16 @@ html {
     z-index: 1;
     transition: min-width 1s ease-in, opacity 1s ease-in;
 }
+
+@media screen and (max-width: 1200px) {
+    .project {
+        min-width: 50%;
+    }
+
+}
+@media screen and (max-width: 720px) {
+    .project {
+        min-width: 100%;
+    }
+
+}

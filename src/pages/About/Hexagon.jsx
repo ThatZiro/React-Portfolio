@@ -1,7 +1,8 @@
 import React from 'react';
 import './Hexagon.css'
 
-const size = 175;
+const windowW = window.innerWidth;
+const size = window.innerWidth < 720? 155 :175;
 const height = size;
 const width = size * 136/150;
 const scale = 25;
@@ -9,7 +10,9 @@ const scale = 25;
 const dark = '#111423';
 const accentColor = '#408CC7'
 const white = '#f5f5f5'
+
 const Hexagon = ({ label, desc}) => {
+  
   
   const getIcon = (icon) => {
     switch(icon){

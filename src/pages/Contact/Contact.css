@@ -100,3 +100,14 @@ form h2 {
     gap: 50px;
     color: var(--accentBlue);
 }
+
+@media screen and (max-width: 1200px) {
+
+    form {
+        width: 100%;
+        padding: 25px 0;
+    }
+}
+@media screen and (max-width: 720px) {
+
+}

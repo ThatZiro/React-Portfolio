@@ -25,12 +25,23 @@ function Contact() {
     });
   };
   
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
     setSubmitted(true);
     //Logic Here
-    console.log(e);
-    console.log('Form submitted:', formData);
+    try {
+      const response = await fetch('http://localhost:3001/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      const result = await response.json("Message Sent");
+      console.log(result);
+    } catch (error) {
+      console.error('Error sending email:', error);
+    }
   };
   
   return (
@@ -84,7 +95,7 @@ function Contact() {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                maxLength="200"
+                maxLength="400"
                 rows={4}
                 className="input input-message"
                 placeholder="Type your message (max 400 characters)"

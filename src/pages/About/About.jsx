@@ -1,10 +1,10 @@
 import './About.css';
 import Hexagon from './Hexagon.jsx';
 import Skill from './skill.jsx';
-import ProfilePic from '../../../public/ProfilePicture.png'
+import ProfilePic from '../../../src/assets/ProfilePicture.png'
 import {Link as ScrollLink} from 'react-scroll';
 import React from 'react';
-import Resume from '../../../public/BrandonBanresResume.docx.pdf'
+import Resume from '../../../src/assets/BrandonBanresResume.docx.pdf'
 function About() {
   return (
     <>

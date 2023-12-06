@@ -5,7 +5,6 @@ import {useState} from 'react';
 
 const duration = 600;
 function Project({ title, tech, src, onClick, fadeState }) {
-  console.log({ title, tech, src, onClick, fadeState })
   const [hide, setHide] = useState(false);
   
   const handleTransitionEnd = () => {

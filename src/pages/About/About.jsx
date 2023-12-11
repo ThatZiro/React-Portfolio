@@ -50,6 +50,7 @@ function About() {
             <Skill label={"MongoDB"} percentage={"90"}/>
             <Skill label={"React"} percentage={"80"}/>
             <Skill label={"Node.js"} percentage={"80"}/>
+            <Skill label={"C#"} percentage={"70"}/>
             <Skill label={"Express.js"} percentage={"70"}/>
             <Skill label={"PHP"} percentage={"60"}/>
             <Skill label={"Java"} percentage={"60"}/>

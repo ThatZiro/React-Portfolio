@@ -1,12 +1,15 @@
 import express from 'express';
 import nodemailer from 'nodemailer';
 import bodyParser from 'body-parser';
+import cors from 'cors';
 
 const app = express();
 const port = 3000;
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
+
+app.use(cors());
 
 const trasporter = nodemailer.createTransport({
   service: 'outlook',
@@ -16,7 +19,7 @@ const trasporter = nodemailer.createTransport({
   }
 })
 
-app.post('/send-email', async(req,res) => {
+app.post('../send-email', async(req,res) => {
   const {name, email, phone, message} = req.body;
   
   const mailOptions = {

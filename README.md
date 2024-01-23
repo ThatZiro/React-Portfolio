@@ -11,11 +11,11 @@
 <div align="center">
 
 <a href="https://github.com/ThatZiro/React-Portfolio/">
-  <img src="./README_Assets/README-Logo.png" alt="Logo" width="256">
+  <img src="./Banner.png" alt="Brandon Barnes Banner">
 </a>
 
 
-# Brandon Barnes
+#
 
 I'm Brandon Barnes, a Full Stack Software Developer with a passion for creative problem-solving and a dedication to innovating user-centric solutions. I thrive on building dynamic applications using technologies like JavaScript, C#, React and more.
 

@@ -32,7 +32,7 @@ function Contact() {
   
   return (
     <div id="Contact" className="contact">
-      <form className="form" name="contact" method="POST" onSubmit={handleSubmit}>
+      <form className="form" name="contact" method="POST">
         {!submitted ? (
             <>
               <h1>CONTACT</h1>
@@ -91,11 +91,12 @@ function Contact() {
                 <p className="char-left">({400 - messageCount})</p>
               </div>
 
-              <ContactButton/>
+              <button type="submit">Submit</button>
+              {/*<ContactButton/>*/}
             </>
           ) :
           <div className="thankyou">
-            <h2>Thank you for submitting a contact request!</h2>
+          <h2>Thank you for submitting a contact request!</h2>
             <Plane fly={true} scale={3} offsetY="0px"/>
           </div>
           

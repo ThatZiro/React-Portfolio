@@ -91,8 +91,7 @@ function Contact() {
                 <p className="char-left">({400 - messageCount})</p>
               </div>
 
-              <button type="submit">Submit</button>
-              {/*<ContactButton/>*/}
+              <ContactButton/>
             </>
           ) :
           <div className="thankyou">

@@ -306,4 +306,11 @@ html {
         min-width: 100%;
     }
 
+    .project-modal {
+        background-color: var(--white);
+        width: 80%;
+        height: 90%;
+        border-radius: 50px;
+    }
+
 }

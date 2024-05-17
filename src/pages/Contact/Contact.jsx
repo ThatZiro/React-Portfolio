@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import{ useState } from 'react';
 import './Contact.css';
 import ContactButton from '../../components/ContactButton/ContactButton.jsx';
 import Plane from '../../components/Plane/Plane.jsx';
@@ -32,7 +32,7 @@ function Contact() {
   
   return (
     <div id="Contact" className="contact">
-      <form name="contact" method="POST" onSubmit={handleSubmit}>
+      <form className="form" name="contact" method="POST" onSubmit={handleSubmit}>
         {!submitted ? (
             <>
               <h1>CONTACT</h1>

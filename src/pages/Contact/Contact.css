@@ -10,7 +10,7 @@
 }
 
 
-form {
+.form {
     background: var(--white);
     width: 60%;
     padding: 40px 100px;
@@ -23,12 +23,12 @@ form {
     gap: 15px;
 }
 
-form h1 {
+.form h1 {
     text-align: center;
     color: var(--mainOffBackground);
     font-size: 3.5rem;
 }
-form h2 {
+.form h2 {
     text-align: center;
     color: var(--gray);
     font-size: 2rem;
@@ -103,7 +103,7 @@ form h2 {
 
 @media screen and (max-width: 1200px) {
 
-    form {
+    .form {
         width: 100%;
         padding: 25px 0;
     }

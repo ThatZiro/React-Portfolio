@@ -8,6 +8,17 @@
   </head>
   <body>
     <div id="root"></div>
+
+    <form name="contact" data-netlify="true" hidden>
+      <div>
+        <input type="hidden" name="form-name" value="contact"/>
+        <input placeholder="‎" type="text" id="name" name="name" required=""/>
+        <input placeholder="‎" type="email" id="email" name="email" required=""/>
+        <input placeholder="‎" type="tel" id="phone" name="phone" required=""/>
+        <textarea placeholder="‎" id="message" name="message" required=""></textarea>
+      </div>
+    </form>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
